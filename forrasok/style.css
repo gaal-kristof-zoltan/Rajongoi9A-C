@@ -1,120 +1,336 @@
-body{
-    margin:auto;
-    width: 90%;
-    background-size: 1em;
-    background-image: url(kepek/hatter.jpg);
+
+:root {
+    --bs-primary: #fd7e14;
+    --bs-primary-rgb: 253, 126, 20;
+    --primary-dark: #e56a00;
+    --primary-light: #ff9838;
 }
 
-h1{
-    position: relative;    
-    top: -75px;
-    color: rgb(28, 36, 53);
-    padding: 15px 25px;
-    background-color: white;
-    width:500px;
-    border-radius: 0 35px 35px 0;
-    margin-bottom: -75px;
+.navbar.bg-primary {
+    background-color: var(--bs-primary) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
 }
 
-p{
-    text-indent: 25px;
-    text-align: justify;
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
-h2{
-    padding: 35px 5px 20px;
-    font-weight: bold;
-    color: rgb(28, 36, 53);  
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
 }
 
-h3{
-    margin-bottom: 10px;
-    text-align: center;
-    color: rgb(28, 36, 53);
+.navbar-dark .navbar-nav .nav-link.active {
+    color: white !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 700;
 }
 
-h1, h2, h3, h4 {
-    letter-spacing: 2px;
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
-.carousel-inner img {
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.carousel-section {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.carousel {
+    height: 85vh;
+    max-height: 800px;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
     width: 100%;
-    height: 90%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top; /* Ez biztosítja, hogy a kép felső része látszódjon */
 }
 
-.media p{
-    font-size: 90%;
-    text-align: justify;
-    margin-top: 20px;
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--bs-primary);
+    border: 2px solid white;
+    opacity: 0.7;
 }
 
-.termekkep{
-    width: 70%;
-    display: block;
-    margin: auto;  
+.carousel-indicators .active {
+    background-color: white;
+    opacity: 1;
 }
 
-.kiskep{
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+.carousel-section h1 {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(253, 126, 20, 0.4);
+}
+
+.btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(253, 126, 20, 0.4);
+}
+
+
+.section-title {
+    color: var(--bs-primary);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100px;
-    vertical-align: top;
+    height: 4px;
+    background-color: var(--bs-primary);
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    color: var(--bs-primary);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-left: 15px;
+    border-left: 5px solid var(--bs-primary);
 }
 
 
-.media{
-    background-color: rgb(182, 190, 206);
-    border: 3px dotted white;
-    border-radius: 0 45px;
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#logo{
-    width:50%;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card.border-primary {
+    border-width: 2px;
+}
+
+/* Lista elemek */
+.list-group-item {
+    border-left: none;
+    border-right: none;
+    padding: 1rem 1.25rem;
+}
+
+.list-group-item:first-child {
+    border-top: none;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Általános testreszabások */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.border-primary {
+    border-color: var(--bs-primary) !important;
+}
+
+
+:target::before {
+    content: "";
     display: block;
-    margin: auto;
+    height: 70px;
+    margin: -70px 0 0;
 }
 
-table{
-    font-size: smaller;
-    margin: auto;
-}
-       
-th {
-    text-align: center;
-}
-
-td{
-    padding: 2px 16px 2px;
-    border: 1px dotted rgb(0, 123, 255);
-}
-                  
-td:first-child {
-    font-weight: bold;
-    text-align: right;
-}
-                  
-td:nth-child(2) {
-    font-style: italic;
-     text-align: center;
-}
-                  
-.fejsor{
-    text-align: center;
-    color: white;
-    background-color:  rgb(0, 123, 255);
-}
-                  
-
-.footer {
-    height: 3em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    background-color: rgb(0, 123, 255);
-    text-align: center;
-}
-.footer > a {
-    color: white;
-    font-weight: bold;
-}
-    .footer > a:hover {
-        color: orange;
+/* Reszponzív design */
+@media (max-width: 992px) {
+    .carousel-section h1 {
+        font-size: 2.5rem;
+        top: 20px;
     }
+    
+    .carousel {
+        height: 70vh;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+        margin: 0.2rem 0;
+        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
 
+@media (max-width: 768px) {
+    .carousel-section h1 {
+        font-size: 2rem;
+        top: 15px;
+    }
+    
+    .carousel {
+        height: 60vh;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .btn-primary,
+    .btn-outline-primary {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-section h1 {
+        font-size: 1.5rem;
+        top: 10px;
+    }
+    
+    .carousel {
+        height: 50vh;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        opacity: 0.7;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.4rem;
+    }
+}

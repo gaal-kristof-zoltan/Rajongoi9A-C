@@ -3,94 +3,150 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="forrasok/bootstrap.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="forrasok/style.css">
-  <script src="forrasok/jquery.min.js"></script>
-  <script src="forrasok/popper.min.js"></script>
-  <script src="forrasok/bootstrap.min.js"></script>  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <title>Counter Strike 2</title>
 </head>
 <body>
-<!--Képlapozó sáv-->
-<div class="container-fluid" id="kepek">
-  <div id="demo" class="carousel slide" data-ride="carousel">
+
+
+<div class="carousel-section" id="kepek">
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
     
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>      
-    
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>      
+
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="forrasok/képek/cs2 5.png" alt="" title="">
+        <img src="forrasok/képek/cs2 5.png" class="d-block w-100" alt="Counter Strike 2" title="CS2">
       </div>
       <div class="carousel-item">
-        <img src="forrasok/képek/cs2 3.jpg" alt="" title="">
+        <img src="forrasok/képek/cs2 3.jpg" class="d-block w-100" alt="Counter Strike 2" title="CS2">
       </div>
-    <div class="carousel-item">
-        <img src="forrasok/képek/cs2 4.png" alt="" title="">
+      <div class="carousel-item">
+        <img src="forrasok/képek/cs2 4.png" class="d-block w-100" alt="Counter Strike 2" title="CS2">
       </div>
     </div> 
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="visually-hidden">Előző</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
       <span class="carousel-control-next-icon"></span>
-    </a>
+      <span class="visually-hidden">Következő</span>
+    </button>
   </div>
   <h1 class="d-none d-md-block">Counter Strike 2</h1>
 </div>
 
-<!--Menü-->
-<nav class="navbar navbar-expand-sm bg-primary navbar-light justify-content-center">
-  <ul class="navbar-nav font-weight-bold">
-    <li class="nav-item">
-        <a class="nav-link text-light" href="#ismerteto">Ismertető</a>
-    </li>
 
-    <li class="nav-item">
-      <a class="nav-link text-light" href="#termekek">Anti cheat</a>
-    </li>
-
-      <li class="nav-item">
-      <a class="nav-link text-light" href="#jarmuvek">Skinek</a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link text-light" href="#epuletek">E-sport</a>
-    </li>
-    
-  </ul>
-</nav>
-<!--Ismertető-->
-<h2 id="ismerteto">Counter strike 2 - Ismertető</h2> 
-<div class="row">
-   <div class="col-lg-8 ">
-    
-      <h3></h3>
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top">
+  <div class="container-fluid">
   
-      <p>Counter‑Strike 2 (CS2) – Rövid ismertető
-
-A Counter‑Strike 2 (CS2) a híres Counter‑Strike: Global Offensive folytatása, amelyet a Valve fejlesztett. A játék taktikai, első személyű lövöldözős (FPS) élményt kínál, ahol két csapat – terroristák és ellen­terroristák – küzd egymás ellen különböző célokért.
-
-
-    <h2>Főbb jellemzők:</h2>
-    <ul>
-    <li>Modernizált grafika: új renderelő motor, jobb fények, textúrák és vizuális effektek.</li>
+    <a class="navbar-brand d-md-none" href="#">CS2</a>
     
-    <li>Taktikai játékélmény: csapatmunka, stratégia és pontos célzás a győzelem kulcsa.</li>
-    
-    <li>Ikonikus pályák: Dust 2, Mirage és Inferno újragondolt verziói.</li>
-    
-    <li>Fejlesztett fizikai és hálózati motor: simább mozgás és pontosabb találatok.</li>
-    
-    <li>Skinek és kozmetikai elemek: továbbra is testreszabható fegyverek, ritka skinek és események.</li>
-</ul></p>
-      <p><h2>Miért népszerű?</h2>
 
-A CS2 megőrzi a klasszikus versenyszerű FPS élményt, miközben modern vizuális és technikai újításokkal frissíti a játékot, így ideális mind veterán játékosoknak, mind új generációnak.</p>
-      <img id="logo" src="" alt="" title="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav fw-bold">
+        <li class="nav-item">
+          <a class="nav-link active" href="#ismerteto">Ismertető</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#termekek">Anti cheat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#jarmuvek">Skinek</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#epuletek">E-sport</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  </body>
+</nav>
+
+
+<div class="container mt-4">
+  <h2 id="ismerteto" class="text-center mb-4 section-title">Counter Strike 2 - Ismertető</h2> 
+  
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="card border-primary shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title text-primary">Counter‑Strike 2 (CS2) – Rövid ismertető</h3>
+          
+          <p class="card-text mt-3">
+            A Counter‑Strike 2 (CS2) a híres Counter‑Strike: Global Offensive folytatása, amelyet a Valve fejlesztett. 
+            A játék taktikai, első személyű lövöldözős (FPS) élményt kínál, ahol két csapat – terroristák és ellen­terroristák – 
+            küzd egymás ellen különböző célokért.
+          </p>
+          
+          <h4 class="mt-4 text-primary">Főbb jellemzők:</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <strong>Modernizált grafika:</strong> új renderelő motor, jobb fények, textúrák és vizuális effektek.
+            </li>
+            <li class="list-group-item">
+              <strong>Taktikai játékélmény:</strong> csapatmunka, stratégia és pontos célzás a győzelem kulcsa.
+            </li>
+            <li class="list-group-item">
+              <strong>Ikonikus pályák:</strong> Dust 2, Mirage és Inferno újragondolt verziói.
+            </li>
+            <li class="list-group-item">
+              <strong>Fejlesztett fizikai és hálózati motor:</strong> simább mozgás és pontosabb találatok.
+            </li>
+            <li class="list-group-item">
+              <strong>Skinek és kozmetikai elemek:</strong> továbbra is testreszabható fegyverek, ritka skinek és események.
+            </li>
+          </ul>
+          
+          <h4 class="mt-4 text-primary">Miért népszerű?</h4>
+          <p class="card-text">
+            A CS2 megőrzi a klasszikus versenyszerű FPS élményt, miközben modern vizuális és technikai újításokkal 
+            frissíti a játékot, így ideális mind veterán játékosoknak, mind új generációnak.
+          </p>
+          
+          <div class="text-center mt-4">
+            <img id="logo" src="forrasok/képek/cs2_logo.png" alt="Counter Strike 2 logo" title="CS2 Logo" class="img-fluid rounded" style="max-width: 200px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <h3 id="termekek" class="text-primary section-subtitle">Anti Cheat Rendszer</h3>
+      <p>A VAC (Valve Anti-Cheat) rendszer továbbfejlesztett változata, amely jobban képes felismerni és tiltani a csalókat. A játékosok biztonságosabb környezetben játszhatnak.</p>
+      
+      <h3 id="jarmuvek" class="text-primary mt-4 section-subtitle">Skinek és Kinézetek</h3>
+      <p>A skinek továbbra is a játék fontos részei. A CS2-ben még részletesebb textúrák és új animációk jelentek meg, amelyek még látványosabbá teszik a fegyvereket.</p>
+      
+      <h3 id="epuletek" class="text-primary mt-4 section-subtitle">E-sport Szcéna</h3>
+      <p>A Counter-Strike 2 az egyik legnagyobb e-sport játék világszerte. Profi ligák, nemzetközi bajnokságok és milliós nyereményalapú versenyek várják a játékosokat.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center mt-5 mb-5">
+  <button class="btn btn-primary btn-lg">További információ</button>
+  <button class="btn btn-outline-primary btn-lg ms-3">Közösség</button>
+</div>
+
+</body>
 </html>
