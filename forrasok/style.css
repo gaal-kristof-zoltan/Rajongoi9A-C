@@ -235,8 +235,8 @@
 /* Általános testreszabások */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #000000;
+    color: #867c7c;
     line-height: 1.6;
 }
 
@@ -333,6 +333,9 @@ body {
     .section-subtitle {
         font-size: 1.4rem;
     }
+}
+#map{
+    color: #e56a00;
 }
 
 .hover-effect {
