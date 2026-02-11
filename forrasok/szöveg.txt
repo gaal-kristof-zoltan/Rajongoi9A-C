@@ -1,8 +1,8 @@
 A játékról: a Cs 2 avagy Counter-Strike egy multiplayer FPS (first person shooter) vidójáték,
 az egyik legnépszerűbb a világon. Készítő: Valve, Counter-Strike játéksorozat 5. része.
-Pont mint a sorozat előző részei 2 csapat között zajlik a küzdelem a terroristák és a Terrorelhárítók között akik egymás ellen próbálnak teljesíteni különböző, játékmód függő célokat.
+Pont mint a sorozat előző részei 2 csapat között zajlik a küzdelem a terroristák és a Terrorelhárítók között akik egymás ellen próbálnak teljesíteni különböző, játékmód függő célokat. (De van egy-kettő ami eltérhet ettől csapatrendeszertől)
 A Counter-Strike 2 új játékmeneti funkciói közé tartozik a volumetrikus "füstfizika", ahol a füstgránát által generált füst növekszik, hogy kitöltse a helyeket, és valós időben megváltoztatható lövésekkel vagy kézigránátok használatával.
-(De van egy-kettő ami eltérhet ettől csapatrendeszertől) Minden kör elején a játékosok különböző fegyvereket és felszereléseket vásárolhatnak. Egy szokásos meccs akkor ér véget, amikor egy csapat tizenhárom kört nyer.
+ Minden kör elején a játékosok különböző fegyvereket és felszereléseket vásárolhatnak. Egy szokásos meccs akkor ér véget, amikor egy csapat tizenhárom kört nyer.
 Főbb játékmódok:
 Bombahatástalanítás:
 A szokásos bombahatástalanító meccseken a Terrorista és a Terrorelhárító csapatok egyaránt öt játékosból állnak. Ezekben a játékmódokban a kiesett játékosok csak a következő körben jelennek meg újra. Minden körben a Terrorista csapat célja, hogy bombát helyezzen el a térképen található két bombahely egyikén, és megvédje azt, amíg a bomba fel nem robban. A Terrorista csapat a Terrorelhárító csapat kiiktatásával is megnyerheti a kört. A Terrorelhárítók megpróbálják megállítani őket a köridő lejártával, az összes terrorista megölésével vagy a robbanóanyag hatástalanításával.
