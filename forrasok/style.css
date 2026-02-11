@@ -5,6 +5,23 @@
     --primary-light: #ff9838;
 }
 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;       
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+
 .navbar.bg-primary {
     background-color: var(--bs-primary) !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -41,7 +58,6 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-
 .carousel-section {
     position: relative;
     overflow: hidden;
@@ -55,11 +71,7 @@
     overflow: hidden;
 }
 
-.carousel-inner {
-    height: 100%;
-}
-
-.carousel-item {
+.carousel-inner, .carousel-item {
     height: 100%;
 }
 
@@ -68,9 +80,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center top;
-    /* Ez biztosítja, hogy a kép felső része látszódjon */
 }
-
 
 .carousel-indicators [data-bs-target] {
     width: 12px;
@@ -103,20 +113,14 @@
     opacity: 1;
 }
 
-.carousel-control-prev {
-    left: 20px;
-}
-
-.carousel-control-next {
-    right: 20px;
-}
+.carousel-control-prev { left: 20px; }
+.carousel-control-next { right: 20px; }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     width: 30px;
     height: 30px;
 }
-
 
 .carousel-section h1 {
     position: absolute;
@@ -133,7 +137,6 @@
     width: 100%;
     padding: 0 20px;
 }
-
 
 .btn-primary {
     background-color: var(--bs-primary);
@@ -169,7 +172,6 @@
     box-shadow: 0 5px 15px rgba(253, 126, 20, 0.4);
 }
 
-
 .section-title {
     color: var(--bs-primary);
     text-align: center;
@@ -203,6 +205,8 @@
 
 
 .card {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -210,39 +214,29 @@
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
 }
 
 .card.border-primary {
     border-width: 2px;
 }
 
-/* Lista elemek */
+.card-title {
+    color: var(--bs-primary);
+}
+
 .list-group-item {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     border-left: none;
     border-right: none;
+    border-color: #333;
     padding: 1rem 1.25rem;
 }
 
-.list-group-item:first-child {
-    border-top: none;
-}
+.list-group-item:first-child { border-top: none; }
+.list-group-item:last-child { border-bottom: none; }
 
-.list-group-item:last-child {
-    border-bottom: none;
-}
-
-/* Általános testreszabások */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #000000;
-    color: #867c7c;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-}
 
 .text-primary {
     color: var(--bs-primary) !important;
@@ -252,90 +246,15 @@ body {
     border-color: var(--bs-primary) !important;
 }
 
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
 
 :target::before {
     content: "";
     display: block;
     height: 70px;
     margin: -70px 0 0;
-}
-
-/* Reszponzív design */
-@media (max-width: 992px) {
-    .carousel-section h1 {
-        font-size: 2.5rem;
-        top: 20px;
-    }
-
-    .carousel {
-        height: 70vh;
-    }
-
-    .navbar-dark .navbar-nav .nav-link {
-        padding: 0.75rem 1rem;
-        margin: 0.2rem 0;
-        text-align: center;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .carousel-section h1 {
-        font-size: 2rem;
-        top: 15px;
-    }
-
-    .carousel {
-        height: 60vh;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 50px;
-        height: 50px;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
-    }
-
-    .btn-primary,
-    .btn-outline-primary {
-        padding: 0.6rem 1.5rem;
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .carousel-section h1 {
-        font-size: 1.5rem;
-        top: 10px;
-    }
-
-    .carousel {
-        height: 50vh;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 40px;
-        height: 40px;
-        opacity: 0.7;
-    }
-
-    .section-title {
-        font-size: 1.6rem;
-    }
-
-    .section-subtitle {
-        font-size: 1.4rem;
-    }
-}
-#map{
-    color: #e56a00;
 }
 
 .hover-effect {
@@ -346,4 +265,28 @@ body {
     transform: scale(1.03) translateY(-5px);
     box-shadow: 0 15px 30px rgba(253, 126, 20, 0.3) !important;
     border-color: var(--bs-primary) !important;
+}
+
+
+@media (max-width: 992px) {
+    .carousel-section h1 { font-size: 2.5rem; top: 20px; }
+    .carousel { height: 70vh; }
+    .navbar-dark .navbar-nav .nav-link { padding: 0.75rem 1rem; margin: 0.2rem 0; text-align: center; }
+    .section-title { font-size: 2rem; }
+}
+
+@media (max-width: 768px) {
+    .carousel-section h1 { font-size: 2rem; top: 15px; }
+    .carousel { height: 60vh; }
+    .carousel-control-prev, .carousel-control-next { width: 50px; height: 50px; }
+    .section-title { font-size: 1.8rem; }
+    .btn-primary, .btn-outline-primary { padding: 0.6rem 1.5rem; font-size: 1rem; }
+}
+
+@media (max-width: 576px) {
+    .carousel-section h1 { font-size: 1.5rem; top: 10px; }
+    .carousel { height: 50vh; }
+    .carousel-control-prev, .carousel-control-next { width: 40px; height: 40px; opacity: 0.7; }
+    .section-title { font-size: 1.6rem; }
+    .section-subtitle { font-size: 1.4rem; }
 }
