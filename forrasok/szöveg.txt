@@ -1,0 +1,25 @@
+A játékról: a Cs 2 avagy Counter-Strike egy multiplayer FPS (first person shooter) vidójáték,
+az egyik legnépszerűbb a világon. Készítő: Valve, Counter-Strike játéksorozat 5. része.
+Pont mint a sorozat előző részei 2 csapat között zajlik a küzdelem a terroristák és a Terrorelhárítók között akik egymás ellen próbálnak teljesíteni különböző, játékmód függő célokat.
+A Counter-Strike 2 új játékmeneti funkciói közé tartozik a volumetrikus "füstfizika", ahol a füstgránát által generált füst növekszik, hogy kitöltse a helyeket, és valós időben megváltoztatható lövésekkel vagy kézigránátok használatával.
+(De van egy-kettő ami eltérhet ettől csapatrendeszertől) Minden kör elején a játékosok különböző fegyvereket és felszereléseket vásárolhatnak. Egy szokásos meccs akkor ér véget, amikor egy csapat tizenhárom kört nyer.
+Főbb játékmódok:
+Bombahatástalanítás:
+A szokásos bombahatástalanító meccseken a Terrorista és a Terrorelhárító csapatok egyaránt öt játékosból állnak. Ezekben a játékmódokban a kiesett játékosok csak a következő körben jelennek meg újra. Minden körben a Terrorista csapat célja, hogy bombát helyezzen el a térképen található két bombahely egyikén, és megvédje azt, amíg a bomba fel nem robban. A Terrorista csapat a Terrorelhárító csapat kiiktatásával is megnyerheti a kört. A Terrorelhárítók megpróbálják megállítani őket a köridő lejártával, az összes terrorista megölésével vagy a robbanóanyag hatástalanításával.
+Túszmentés:
+Egy túszmentő meccsen a Terrorelhárító csapat támadóként viselkedik, és megpróbálja megmenteni a nem játékos (NPC) "túszokat", akiket a Terrorista csapat véd.
+Egyéb játékmódok:
+Wingman, Casual, Deathmatch , Arms Race és Retakes.
+ A Wingman egy bombahatástalanító meccs, de csapatonként csak két játékossal, egy bombahellyel és 9 körrel
+ A Casual egy másik bombahatástalanító mód, de nincs rangsorrendszer, és az egyes csapatokban lévő játékosok száma növekszik.
+ Deatmatch-ben mindenki egymás ellen van és az a cél hogy a lehető legtöbb ellenféllel végezzenek.
+ Az Arms Race nagyon eltér a többi módtól, nincs pénzrendszere vagy menüje a fegyverek vásárlásához. Ehelyett a játékosok új fegyvereket kapnak az egymást követő gyilkosságok után, amelyek fokozatosan gyengébbek és nehezebbek lesznek.
+A Retakes egy átdolgozott bombahatástalanító mód, amelyben három terroristának kell megvédenie egy aktív bombahelyszínt négy terrorelhárítótól; az a csapat nyeri a meccset, amelyik először nyer nyolc menetet.
+
+Bajnokságok:
+A Cs 2-ben a legnagyobb szintű bajnokság a Major, a legutóbbi 2025-ben volt:
+
+A StarLadder Major 2025 Budapesten volt, a negyedik Counter-Strike 2 Major bajnokság.
+2025 nov. 24 és dec. 14 között került megrendezésre (Budapesten), a 2. Major volt amit a Starladder szervezett, a 2019-es berlini után.
+32 csapat versenyzett az  1.250.000 dollár díjért (41, 67 millió forint) az MVM Dome-ban.
+A végső döntőt 3-1 re a FaZe clan ellen, és így a bajnokságot is, Vitality cspata nyerte, immár ez lett a harmadik címük.
