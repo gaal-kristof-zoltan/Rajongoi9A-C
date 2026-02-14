@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.quiz-section {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(135deg, #000000, #111111, #1a1a1a); */
+background-image: url(kepek/quiz\ hatter.png);
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Cím */
+.quiz-container h1 {
+    color:white;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+/* Kérdés */
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    color: #e56a00;
+}
+
+/* Válaszok */
+.answer-btn {
+    width: 60%;
+    max-width: 500px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #333;
+    background-color: #111;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.answer-btn:hover {
+    border-color: var(--bs-primary);
+    transform: scale(1.03);
+    box-shadow: 0 5px 20px rgba(253, 126, 20, 0.4);
+}
+
+/* Eredmény */
+#result {
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+    .answer-btn {
+        width: 90%;
+    }
+
+    .quiz-container h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Visszaugrás a főoldalra gomb */
+#home-btn{
+    width: 60%;
+    max-width: 500px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #333;
+    background-color: #111;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+}
