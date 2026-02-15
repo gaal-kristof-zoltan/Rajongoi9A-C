@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2 Quiz</title>
   <link rel="stylesheet" href="forrasok/quiz.css">
 </head>
+
 <body>
 
   <div class="quiz-container">
     <h1>CS2 Mini Quiz</h1>
+    <div class="score-box">Pontszám: <span id="scoreDisplay">0</span> / 25</div>
     <div id="quiz">
       <h2 id="question">Kérdés szövege</h2>
       <div id="answers"></div>
+      <button id="nextBtn" class="next-btn hidden">Következő </button>
     </div>
     <div id="result" class="hidden"></div>
-   <br>
-     <div class="text-center my-5">
-  <a href="Főoldal.html" class="quiz-btn" id="home-btn">
-    Vissza a főoldalra
-  </a>
-</div>
-</div>
-
-
+    <br>
+    <div class="text-center my-5">
+      <a href="Főoldal.html" class="quiz-btn" id="home-btn">Vissza a főoldalra</a>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>

@@ -28,15 +28,20 @@ const quizData = [
 
 let currentQuestion = 0;
 let score = 0;
+let answerSelected = false;
 
 const questionElement = document.getElementById("question");
 const answersElement = document.getElementById("answers");
 const resultElement = document.getElementById("result");
+const nextBtn = document.getElementById("nextBtn");
+const scoreDisplay = document.getElementById("scoreDisplay");
 
 function loadQuestion() {
   const currentQuiz = quizData[currentQuestion];
   questionElement.innerText = `${currentQuestion + 1}. ${currentQuiz.question}`;
   answersElement.innerHTML = "";
+  answerSelected = false;
+  nextBtn.classList.add("hidden");
 
   currentQuiz.answers.forEach((answer, index) => {
     const button = document.createElement("button");
@@ -48,10 +53,32 @@ function loadQuestion() {
 }
 
 function selectAnswer(index) {
-  if (index === quizData[currentQuestion].correct) {
+  if (answerSelected) return; // már válaszolt
+
+  answerSelected = true;
+  const isCorrect = (index === quizData[currentQuestion].correct);
+  if (isCorrect) {
     score++;
+    scoreDisplay.innerText = score;
   }
 
+  // Válaszok színezése
+  const allButtons = document.querySelectorAll(".answer-btn");
+  allButtons.forEach((btn, i) => {
+    btn.disabled = true;
+    if (i === quizData[currentQuestion].correct) {
+      btn.classList.add("correct");
+    } else if (i === index && !isCorrect) {
+      btn.classList.add("incorrect");
+    }
+    // ha a rossz választ jelöltük meg, akkor piros, egyébként csak a helyes zöld
+  });
+
+  // Megjelenik a következő gomb
+  nextBtn.classList.remove("hidden");
+}
+
+function nextQuestion() {
   currentQuestion++;
 
   if (currentQuestion < quizData.length) {
@@ -63,6 +90,7 @@ function selectAnswer(index) {
 
 function showResult() {
   document.getElementById("quiz").classList.add("hidden");
+  nextBtn.classList.add("hidden");
   resultElement.classList.remove("hidden");
 
   let rank = "";
@@ -74,8 +102,12 @@ function showResult() {
     <h2>Vége a quiznek!</h2>
     <p>Pontszámod: ${score} / ${quizData.length}</p>
     <p>Rangod: <strong>${rank}</strong></p>
-    <button onclick="location.reload()">Újra</button>
+    <button onclick="location.reload()" class="restart-btn">Újra</button>
   `;
 }
 
+// Következő gomb eseménykezelője
+nextBtn.addEventListener("click", nextQuestion);
+
+// Inicializálás
 loadQuestion();

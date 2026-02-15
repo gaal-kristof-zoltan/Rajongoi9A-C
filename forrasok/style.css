@@ -13,7 +13,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0a0a0a;
-    color: #e0e0e0;       
+    color: #e0e0e0;
     line-height: 1.6;
 }
 
@@ -71,7 +71,8 @@ body {
     overflow: hidden;
 }
 
-.carousel-inner, .carousel-item {
+.carousel-inner,
+.carousel-item {
     height: 100%;
 }
 
@@ -113,8 +114,13 @@ body {
     opacity: 1;
 }
 
-.carousel-control-prev { left: 20px; }
-.carousel-control-next { right: 20px; }
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -234,8 +240,13 @@ body {
     padding: 1rem 1.25rem;
 }
 
-.list-group-item:first-child { border-top: none; }
-.list-group-item:last-child { border-bottom: none; }
+.list-group-item:first-child {
+    border-top: none;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
 
 
 .text-primary {
@@ -269,28 +280,80 @@ body {
 
 
 @media (max-width: 992px) {
-    .carousel-section h1 { font-size: 2.5rem; top: 20px; }
-    .carousel { height: 70vh; }
-    .navbar-dark .navbar-nav .nav-link { padding: 0.75rem 1rem; margin: 0.2rem 0; text-align: center; }
-    .section-title { font-size: 2rem; }
+    .carousel-section h1 {
+        font-size: 2.5rem;
+        top: 20px;
+    }
+
+    .carousel {
+        height: 70vh;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;
+        margin: 0.2rem 0;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
-    .carousel-section h1 { font-size: 2rem; top: 15px; }
-    .carousel { height: 60vh; }
-    .carousel-control-prev, .carousel-control-next { width: 50px; height: 50px; }
-    .section-title { font-size: 1.8rem; }
-    .btn-primary, .btn-outline-primary { padding: 0.6rem 1.5rem; font-size: 1rem; }
+    .carousel-section h1 {
+        font-size: 2rem;
+        top: 15px;
+    }
+
+    .carousel {
+        height: 60vh;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 50px;
+        height: 50px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .btn-primary,
+    .btn-outline-primary {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 576px) {
-    .carousel-section h1 { font-size: 1.5rem; top: 10px; }
-    .carousel { height: 50vh; }
-    .carousel-control-prev, .carousel-control-next { width: 40px; height: 40px; opacity: 0.7; }
-    .section-title { font-size: 1.6rem; }
-    .section-subtitle { font-size: 1.4rem; }
+    .carousel-section h1 {
+        font-size: 1.5rem;
+        top: 10px;
+    }
+
+    .carousel {
+        height: 50vh;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        opacity: 0.7;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.4rem;
+    }
 }
-#vissza{
-   font-weight: bold; 
-   background-color: #e56a00;
+
+#vissza {
+    font-weight: bold;
+    background-color: #e56a00;
 }
