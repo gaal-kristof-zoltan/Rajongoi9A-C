@@ -3,7 +3,6 @@ body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    /* betűtípus hozzáadva az egységes megjelenéshez */
 }
 
 .quiz-section {
@@ -15,7 +14,7 @@ body {
 
 .quiz-container {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 56px);
     background-image: url(kepek/quiz\ hatter.png);
     background-size: cover;
     background-position: center;
@@ -237,6 +236,7 @@ body {
 @media (max-width: 768px) {
     .quiz-container {
         padding: 20px;
+        height: calc(100vh - 56px); /* Itt is alkalmazkodik a navbarhoz */
     }
 
     .quiz-container h1 {
